@@ -8,7 +8,7 @@
 </head>
 <body>
 	<ul id="ul_01"></ul>
-
+	<ul id="ul_02"></ul>
 	
 
 </body>
@@ -19,5 +19,12 @@
 	const li_01 = document.getElementById("ul_01");
 	li_01.innerHTML = "<li>これです</li>";
 
+	
+	// パターン2
+	const li_02 = document.getElementById("ul_02");
+	const textEle = document.createTextNode("これです");
+	const liTag = document.createElement("li");
+	liTag.appendChild(textEle);
+    li_02.appendChild(liTag);
 </script>
 </html>
