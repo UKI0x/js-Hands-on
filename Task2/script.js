@@ -14,6 +14,8 @@
 	img.src = "bookmark.png";
 	img.alt = "ブックマーク";
 	img.innerHTML = "これです";
+	//aタグ直下にテキストを追加
+	a02.textContent = "これです";
 	
 	//子要素を指定
 	newList.appendChild(li).appendChild(a).appendChild(img);
