@@ -9,12 +9,30 @@
 <body>
 	<h1>課題2</h1>
 	
+	<ul id="js_list"></ul>
 	
 
 </body>
 <script>
 	'use strict';
-
 	
+	//ulタグを取得
+	let newList = document.getElementById("js_list");
+
+	//ulに入れる中身を作成
+	let liTag = document.createElement("li");
+	let aTag = document.createElement("a");
+	let imgTag = document.createElement("img");
+
+	//タグの属性を編集
+	aTag.href = "1.html";
+
+	imgTag.src = "bookmark.png";
+	imgTag.alt = "ブックマーク";
+	imgTag.innerHTML = "これです";
+	
+	//子要素を指定
+	newList.appendChild(liTag).appendChild(aTag).appendChild(imgTag);
+
 </script>
 </html>
