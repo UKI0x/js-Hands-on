@@ -13,6 +13,6 @@ for (let i = 1; i <= liLength; i++){
 	a.href = `a${liLength}.html`;
 	a.textContent = `a${liLength}`;
 	img.src = "/img/bookmark.pmg";
-	ul.appendChild(li).appendChild(a).insertAdjacentElement("afterbegin", img);
+	ul.appendChild(li).appendChild(a).prepend(img);
 }
 
