@@ -2,7 +2,7 @@
 
 
 const ul = document.getElementById("ul");
-
+const fragment = document.createDocumentFragment();
 const liLength　= 2;
 
 for (let i = 1; i <= liLength; i++){
@@ -13,6 +13,7 @@ for (let i = 1; i <= liLength; i++){
 	a.href = `a${i}.html`;
 	a.textContent = `a${i}`;
 	img.src = "/img/bookmark.pmg";
-	ul.appendChild(li).appendChild(a).prepend(img);
+	fragment.appendChild(li).appendChild(a).prepend(img);
 }
 
+ul.appendChild(fragment);
