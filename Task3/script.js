@@ -12,7 +12,7 @@ for (let i = 1; i <= liLength; i++){
 
 	a.href = `a${i}.html`;
 	a.textContent = `a${i}`;
-	img.src = "/img/bookmark.pmg";
+	img.src = "/img/bookmark.png";
 	fragment.appendChild(li).appendChild(a).prepend(img);
 }
 
