@@ -1,7 +1,7 @@
 'use strict';
 
 
-const ul = document.getElementById("js-app");
+const app = document.getElementById("js-app");
 const fragment = document.createDocumentFragment();
 
 const data = [
@@ -22,4 +22,4 @@ data.forEach(list => {
 	fragment.appendChild(li).appendChild(a).prepend(img);
 });
 
-ul.appendChild(fragment);
+app.appendChild(fragment);
