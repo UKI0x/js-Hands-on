@@ -8,8 +8,8 @@ const data = [
 
 const getData = new Promise((resolve) => resolve(data));
 
-getData.then(() => {
-  data.forEach((list) => {
+getData.then((value) => {
+  value.forEach((list) => {
     const li = document.createElement("li");
     const a = document.createElement("a");
     const img = document.createElement("img");
