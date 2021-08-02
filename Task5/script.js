@@ -6,9 +6,9 @@ const data = [
   { to: "message.html", img: "2.png", alt: "画像2", text: "メッセージ" }
 ];
 
-const getData = new Promise((resolve) => resolve(data));
+const fetchData = new Promise((resolve) => resolve(data));
 
-getData.then((value) => {
+fetchData.then((value) => {
   value.forEach((list) => {
     const li = document.createElement("li");
     const a = document.createElement("a");
